@@ -20,7 +20,7 @@
 
 .calc{
     height: 100%;
-    min-width: 500px;
+    min-width: 450px;
     max-width: 500px;;
     display: grid;
     grid-template-areas: 
@@ -53,6 +53,38 @@
 
 }
 
+/* selector*/
+
+.selector{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 60% 20% 15%;
+    grid-template-areas: "calMaster theme selectToggle";
+    align-items: end;
+}
+
+.calMaster{
+    grid-area: calMaster;
+    font-size: 1.5em;
+}
+
+.theme{
+    grid-area: theme;
+    font-size: 0.7em;
+}
+
+.selectToggle{
+    width: 80%;
+    font-size: 0.7em;
+    display: flex;
+    flex-direction: column;
+    grid-area: selectToggle;
+}
+
+.positions{
+    margin-left: 5px;
+    letter-spacing: 0.4em;
+}
 
 .option {
 
@@ -79,8 +111,8 @@
     z-index:2;
     margin: 0;
     text-align: center;
-    padding: 2px 3px;
-    font-size: 15px;
+    padding: 2px 3.5px;
+    font-size: 0.7em;
     
   }
   
@@ -93,9 +125,9 @@
   }
   
   .option span {
-    height: 21px;
-    width: 21px;
-    line-height: 21px;
+    height: 1.3em;
+    width: 1.3em;
+    line-height: 5em;
     border-radius: 50%;
     background:hsl(223, 31%, 20%);
     display:block;
@@ -113,17 +145,12 @@
   
   .option input[value="2"]:checked ~ span{
     background:hsl(25, 98%, 40%);
-    left: 23px;
+    left: 2em;
   }
   
   .option input[value="3"]:checked ~ span{
     background:hsl(176, 100%, 44%);
-    left: 46px;
+    left: 3.5em;
   }
 
-  .option input[value="1"]:checked + label,.option input[value="3"]:checked + label{
-    color:rgb(87, 2, 2);
-  }
-  .option input[value="2"]:checked + label{
-    color:#fff;
-  }
+
