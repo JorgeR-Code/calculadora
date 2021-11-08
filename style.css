@@ -28,7 +28,7 @@
     "display"
     "keyboard";
     grid-template-columns: 1fr;
-    grid-template-rows: 10% 20% 70%;
+    grid-template-rows: 10% 25% 65%;
     background-color: transparent;
     justify-content: center;
     align-items: center;
@@ -53,12 +53,12 @@
 
 }
 
-/* selector*/
+/* selector top*/
 
 .selector{
     width: 100%;
     display: grid;
-    grid-template-columns: 60% 20% 15%;
+    grid-template-columns: 60% 25% 15%;
     grid-template-areas: "calMaster theme selectToggle";
     align-items: end;
 }
@@ -69,11 +69,13 @@
 }
 
 .theme{
+    margin-left: 6em;
     grid-area: theme;
     font-size: 0.7em;
 }
 
 .selectToggle{
+    margin-left: 1em;
     width: 80%;
     font-size: 0.7em;
     display: flex;
@@ -152,5 +154,26 @@
     background:hsl(176, 100%, 44%);
     left: 3.5em;
   }
+
+/* Display */
+
+
+.display{
+    margin-top: 2%;
+    width: 95%;
+    height: 90%;
+    background-color: hsl(224, 36%, 15%);
+    border-radius: 10px;
+    padding: 5px 15px 5px 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 3em;
+    
+    
+    
+}
+
 
 
