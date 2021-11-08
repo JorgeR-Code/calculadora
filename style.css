@@ -24,10 +24,10 @@
     max-width: 500px;;
     display: grid;
     grid-template-areas: 
-    "selector selector selector selector"
-    "display display display display"
-    "keyboard keyboard keyboard keyboard";
-    grid-template-columns: repeat(4, 1fr);
+    "selector"
+    "display"
+    "keyboard";
+    grid-template-columns: 1fr;
     grid-template-rows: 10% 20% 70%;
     background-color: transparent;
     justify-content: center;
@@ -52,3 +52,78 @@
     margin: 0 auto;
 
 }
+
+
+.option {
+
+    background: hsl(223, 31%, 20%);
+    display: inline-block;
+    padding: 2px 3px;
+    border-radius: 20px;
+    position:relative;
+  }
+  
+  .option i{
+      color: hsl(223, 31%, 20%);
+      background: hsl(223, 31%, 20%);
+     
+  }
+  .option label {
+    background: hsl(223, 31%, 20%);
+    text-align: center;
+    font-family: sans-serif;
+    display: inline-block;
+    color: hsl(223, 31%, 20%);
+    border-radius: 50%;
+    
+    z-index:2;
+    margin: 0;
+    text-align: center;
+    padding: 2px 3px;
+    font-size: 15px;
+    
+  }
+  
+  .option input {
+    
+    position: absolute;
+    z-index: 3;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .option span {
+    height: 21px;
+    width: 21px;
+    line-height: 21px;
+    border-radius: 50%;
+    background:hsl(223, 31%, 20%);
+    display:block;
+    position:absolute;
+    left: 22px;
+    top: 2px;
+    transition:all 0.3s ease-in-out;
+  }
+  
+  .option input[value="1"]:checked ~ span{
+    background:hsl(6, 63%, 50%);
+    left:2px;
+    }
+  
+  
+  .option input[value="2"]:checked ~ span{
+    background:hsl(25, 98%, 40%);
+    left: 23px;
+  }
+  
+  .option input[value="3"]:checked ~ span{
+    background:hsl(176, 100%, 44%);
+    left: 46px;
+  }
+
+  .option input[value="1"]:checked + label,.option input[value="3"]:checked + label{
+    color:rgb(87, 2, 2);
+  }
+  .option input[value="2"]:checked + label{
+    color:#fff;
+  }
