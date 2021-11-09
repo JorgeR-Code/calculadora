@@ -3,6 +3,8 @@ var buttonNumbers = document.querySelectorAll('.number');
 var buttonOperators = document.querySelectorAll('.operator');
 var equal = document.getElementById('equalId');
 
+var selector = document.querySelectorAll('.inputCheck');
+
 
 class Calculator {
     add(num1, num2){
@@ -121,3 +123,58 @@ buttonOperators.forEach(button =>{
 equal.addEventListener('click', ()=>{
     display.operation();
 });
+
+
+// ----------------Theme--------------
+
+function selectTheme(themeValue){
+    console.log(themeValue);
+
+switch (themeValue){
+    case 1:
+    break;
+    case 2:
+        removeAdd (3, 2)
+
+    break;
+    case 3:
+
+    break;
+}
+
+
+function removeAdd (remove, add){
+    document.getElementsByClassName('body').classList.remove(`bodyTheme${{remove}}`)
+    document.getElementsByClassName('option').classList.remove(`optionTheme${{add}}`)
+    document.getElementsByClassName('display').classList.remove(`displayTheme${{add}}`)
+    document.getElementsByClassName('keyboard').classList.remove(`keyboardTheme${{add}}`)
+    document.getElementsByClassName('number').classList.remove(`numberTheme${{add}}`)
+    document.getElementsByClassName('operator').classList.remove(`operatorTheme${{add}}`)
+    document.getElementsByClassName('blue').classList.remove(`blueTheme${{add}}`)
+    document.getElementsByClassName('red').classList.remove(`redTheme${{add}}`)
+
+    document.getElementsByClassName('body').classList.add(`bodyTheme${{add}}`)
+    document.getElementsByClassName('option').classList.add(`optionTheme${{add}}`)
+    document.getElementsByClassName('display').classList.add(`displayTheme${{add}}`)
+    document.getElementsByClassName('keyboard').classList.add(`keyboardTheme${{add}}`)
+    document.getElementsByClassName('number').classList.add(`numberTheme${{add}}`)
+    document.getElementsByClassName('operator').classList.add(`operatorTheme${{add}}`)
+    document.getElementsByClassName('blue').classList.add(`blueTheme${{add}}`)
+    document.getElementsByClassName('red').classList.add(`redTheme${{add}}`)
+
+
+
+
+}
+
+
+}
+
+
+selector.forEach(input =>{
+    input.addEventListener('click', ()=>{
+        selectTheme(input.value);
+    });
+});
+
+
