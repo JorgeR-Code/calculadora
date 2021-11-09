@@ -13,14 +13,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80vh;
-    margin: 4% auto;
+    height: 90vh;
+    margin: 3% auto 2%;
 }
 
 
 .calc{
     height: 100%;
-    min-width: 450px;
+    min-width: 350px;
     max-width: 500px;;
     display: grid;
     grid-template-areas: 
@@ -29,7 +29,6 @@
     "keyboard";
     grid-template-columns: 1fr;
     grid-template-rows: 10% 25% 65%;
-    gap: 5%;
     background-color: transparent;
     justify-content: center;
     align-items: center;
@@ -59,7 +58,7 @@
 .selector{
     width: 100%;
     display: grid;
-    grid-template-columns: 60% 25% 15%;
+    grid-template-columns: 40% 40% 20%;
     grid-template-areas: "calMaster theme selectToggle";
     align-items: end;
 }
@@ -70,7 +69,7 @@
 }
 
 .theme{
-    margin-left: 6em;
+    margin-left: 8em;
     grid-area: theme;
     font-size: 0.7em;
 }
@@ -161,7 +160,7 @@
 
 .display{
     width: 95%;
-    height: 90%;
+    height: 75%;
     background-color: hsl(224, 36%, 15%);
     border-radius: 10px;
     padding: 5px 15px 5px 5px;
@@ -206,6 +205,20 @@
 
 }
 
+.operator{
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 1.5em;
+    background-color: hsl(30, 25%, 89%);
+    border: none;
+    color: hsl(221, 14%, 31%);
+    box-shadow: 0px 3px hsl(28, 16%, 65%);
+    margin-bottom: 10%;
+    align-items: center;
+    justify-content: center;
+}
+
 .grid-2{
     grid-column: span 2;
     height: 85%;
@@ -230,6 +243,9 @@
 .number:hover {
     background-color: hsl(30, 100%, 98%);
   }
+.operator:hover {
+    background-color: hsl(30, 100%, 98%);
+  }
 
 
 .blue:hover {
@@ -244,6 +260,20 @@
     box-shadow: 0 2px hsl(28, 16%, 65%);
     transform: translateY(2px);
   }
+.operator:active {
+    box-shadow: 0 2px hsl(28, 16%, 65%);
+    transform: translateY(2px);
+  }
 
 
+/* attribution*/
+.attribution{
+    align-items: center;
+    text-align: center;
+    color: hsl(223, 31%, 20%);
+}
+.attribution a{
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+}
 
