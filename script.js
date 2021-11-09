@@ -142,13 +142,15 @@ $(document).ready(function() {
         
             break;
             case "3":
-                console.log("sdf")
+                removeAdd ("2","3")
         
         
             break;
         }
     
         function removeAdd (remove, add){
+
+
             document.querySelector('.body').classList.remove(`bodyTheme${remove}`)
             document.querySelector('.option').classList.remove(`optionTheme${remove}`)
             document.querySelector('.display').classList.remove(`displayTheme${remove}`)
@@ -163,9 +165,9 @@ $(document).ready(function() {
             document.querySelector('.option').classList.add(`optionTheme${add}`)
             document.querySelector('.display').classList.add(`displayTheme${add}`)
             document.querySelector('.keyboard').classList.add(`keyboardTheme${add}`)
-            document.querySelector('.number').classList.add(`numberTheme${add}`)
-            document.querySelector('.operator').classList.add(`operatorTheme${add}`)
-            document.querySelector('.blue').classList.add(`blueTheme${add}`)
+            document.querySelector('.keyboard .number').classList.add(`numberTheme${add}`)
+            document.querySelector('.keyboard .operator').classList.add(`operatorTheme${add}`)
+            document.querySelector('.keyboard .blue').classList.add(`blueTheme${add}`)
             document.querySelector('.red').classList.add(`redTheme${add}`)
         
         
