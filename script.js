@@ -131,33 +131,85 @@ $(document).ready(function() {
     
  
     function selectTheme(themeValue){
+        
+
+            
+
 
         switch (themeValue){
+
             case "1":
-                console.log("asdhasdfewfksdcdsj")
+
+                var number = document.querySelectorAll('.number');
+                var operator = document.querySelectorAll('.operator');
+                var blue = document.querySelectorAll('.blue');
+
+                for (var i = 0; i < number.length; i++) {
+                    number[i].classList.remove(`numberTheme2`)
+                }
+                for (var i = 0; i < operator.length; i++) {
+                    operator[i].classList.remove(`operatorTheme2`)
+                }
+                for (var i = 0; i < blue.length; i++) {
+                    blue[i].classList.remove(`blueTheme2`)
+                }
+                document.querySelector('.body').classList.remove(`bodyTheme2`)
+                document.querySelector('.option').classList.remove(`optionTheme2`)
+                document.querySelector('.display').classList.remove(`displayTheme2`)
+                document.querySelector('.keyboard').classList.remove(`keyboardTheme2`)
+                document.querySelector('.red').classList.remove(`redTheme2`)
+                
+
+                for (var i = 0; i < number.length; i++) {
+                    number[i].classList.remove(`numberTheme3`)
+                }
+                for (var i = 0; i < operator.length; i++) {
+                    operator[i].classList.remove(`operatorTheme3`)
+                }
+                for (var i = 0; i < blue.length; i++) {
+                    blue[i].classList.remove(`blueTheme3`)
+                }
+                document.querySelector('.body').classList.remove(`bodyTheme3`)
+                document.querySelector('.option').classList.remove(`optionTheme3`)
+                document.querySelector('.display').classList.remove(`displayTheme3`)
+                document.querySelector('.keyboard').classList.remove(`keyboardTheme3`)
+                document.querySelector('.red').classList.remove(`redTheme3`)
         
             break;
             case "2":
                 removeAdd ("3","2")
+                state = "2";
+               
         
             break;
             case "3":
                 removeAdd ("2","3")
+                state = "3";
+                
         
         
             break;
         }
     
         function removeAdd (remove, add){
+            var number = document.querySelectorAll('.number');
+            var operator = document.querySelectorAll('.operator');
+            var blue = document.querySelectorAll('.blue');
 
 
+            for (var i = 0; i < number.length; i++) {
+                number[i].classList.remove(`numberTheme${remove}`)
+            }
+            for (var i = 0; i < operator.length; i++) {
+                operator[i].classList.remove(`operatorTheme${remove}`)
+            }
+            for (var i = 0; i < blue.length; i++) {
+                blue[i].classList.remove(`blueTheme${remove}`)
+            }
             document.querySelector('.body').classList.remove(`bodyTheme${remove}`)
             document.querySelector('.option').classList.remove(`optionTheme${remove}`)
             document.querySelector('.display').classList.remove(`displayTheme${remove}`)
             document.querySelector('.keyboard').classList.remove(`keyboardTheme${remove}`)
-            document.querySelector('.number').classList.remove(`numberTheme${remove}`)
-            document.querySelector('.operator').classList.remove(`operatorTheme${remove}`)
-            document.querySelector('.blue').classList.remove(`blueTheme${remove}`)
             document.querySelector('.red').classList.remove(`redTheme${remove}`)
                 
         
@@ -165,12 +217,17 @@ $(document).ready(function() {
             document.querySelector('.option').classList.add(`optionTheme${add}`)
             document.querySelector('.display').classList.add(`displayTheme${add}`)
             document.querySelector('.keyboard').classList.add(`keyboardTheme${add}`)
-            document.querySelector('.keyboard .number').classList.add(`numberTheme${add}`)
-            document.querySelector('.keyboard .operator').classList.add(`operatorTheme${add}`)
-            document.querySelector('.keyboard .blue').classList.add(`blueTheme${add}`)
             document.querySelector('.red').classList.add(`redTheme${add}`)
         
-        
+            for (var i = 0; i < number.length; i++) {
+                number[i].classList.add(`numberTheme${add}`)
+            }
+            for (var i = 0; i < operator.length; i++) {
+                operator[i].classList.add(`operatorTheme${add}`)
+            }
+            for (var i = 0; i < blue.length; i++) {
+                blue[i].classList.add(`blueTheme${add}`)
+            }
         
         
         }
