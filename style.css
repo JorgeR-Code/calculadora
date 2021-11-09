@@ -382,95 +382,95 @@
     transform: translateY(2px);
   }
 /* Theme 3*/
-.bodyTheme2{
-    background-color: hsl(0, 0%, 90%);
-    color: hsl(60, 10%, 19%);
+.bodyTheme3{
+    background-color: hsl(268, 75%, 9%);
+    color: hsl(52, 100%, 62%);
  }
 
- .optionTheme2{
-    background: hsl(0, 5%, 81%);
+ .optionTheme3{
+    background: hsl(268, 71%, 12%);
 
  }
    
-.optionTheme2 i{
-    color: hsl(0, 5%, 81%);
-    background: hsl(0, 5%, 81%);
+.optionTheme3 i{
+    color: hsl(268, 71%, 12%);
+    background: hsl(268, 71%, 12%);
    
 }
-.optionTheme2 label {
-  background: hsl(0, 5%, 81%);
-   color: hsl(0, 5%, 81%);
+.optionTheme3 label {
+  background: hsl(268, 71%, 12%);
+   color: hsl(268, 71%, 12%);
 
 }
 
 
-.optionTheme2 span {
+.optionTheme3 span {
 
-  background:hsl(0, 5%, 81%);
-
-}
-
-.displayTheme2{
-
-    background-color: hsl(0, 0%, 93%);
+  background:hsl(268, 71%, 12%);
 
 }
 
-.keyboardTheme2{
+.displayTheme3{
+
+    background-color: hsl(268, 71%, 12%);
+
+}
+
+.keyboardTheme3{
     
-    background-color: hsl(0, 5%, 81%);
+    background-color: hsl(268, 71%, 12%);
 
 
 }
 
-.numberTheme2{
+.numberTheme3{
 
-    background-color: hsl(45, 7%, 89%);
-    color: hsl(60, 10%, 19%);
-    box-shadow: 0px 3px hsl(35, 11%, 61%);
-
-}
-
-.operatorTheme2{
-
-    background-color: hsl(45, 7%, 89%);
-    color: hsl(60, 10%, 19%);
-    box-shadow: 0px 3px hsl(35, 11%, 61%);
+    background-color: hsl(268, 47%, 21%);
+    color: hsl(52, 100%, 62%);
+    box-shadow: 0px 3px hsl(290, 70%, 36%);
 
 }
 
+.operatorTheme3{
 
-.blueTheme2{
+    background-color: hsl(268, 47%, 21%);
+    color: hsl(52, 100%, 62%);
+    box-shadow: 0px 3px hsl(290, 70%, 36%);
+
+}
+
+
+.blueTheme3{
     
-    background-color: hsl(185, 42%, 37%);
-    box-shadow: 0px 3px hsl(185, 58%, 25%);
+    background-color: hsl(281, 89%, 26%);
+    box-shadow: 0px 3px hsl(285, 91%, 52%);
     color: hsl(0, 0, 100%);
 }
 
-.redTheme2{
+.redTheme3{
 
-    background-color: hsl(25, 98%, 40%);
-    box-shadow: 0px 3px hsl(25, 99%, 27%);
-    color: hsl(0, 0, 100%);
+    background-color: hsl(176, 100%, 44%);
+    box-shadow: 0px 3px hsl(177, 92%, 70%);
+    color: hsl(198, 20%, 13%);
 }
 
-.numberTheme2:hover {
-    background-color: hsl(0, 0%, 72%);
+.numberTheme3:hover {
+    background-color: hsl(268, 43%, 23%);
   }
-.operatortheme2:hover {
-    background-color: hsl(0, 0%, 72%);
+.operatortheme3:hover {
+    background-color: hsl(268, 43%, 23%);
   }
 
 
-.blueTheme2:hover {
-    background-color: hsl(185, 28%, 47%);
+.blueTheme3:hover {
+    background-color: hsl(281, 77%, 31%);
 
 }
-.redTheme2:hover {
-    background-color: hsl(25, 100%, 45%);
+.redTheme3:hover {
+    background-color: hsl(176, 86%, 43%);
 
 }
-.numberTheme2:active , .redTheme2:active,.operatortheme2:active {
+.numberTheme3:active , .redTheme3:active,.operatortheme3:active {
     box-shadow: 0 2px hsl(28, 16%, 65%);
     transform: translateY(2px);
   }
