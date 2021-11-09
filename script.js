@@ -1,6 +1,7 @@
 var displayValue = document.getElementById('displayId');
 var buttonNumbers = document.querySelectorAll('.number');
 var buttonOperators = document.querySelectorAll('.operator');
+var equal = document.getElementById('equalId');
 
 
 class Calculator {
@@ -16,6 +17,8 @@ class Calculator {
     mult(num1, num2){
         return num1 * num2;
     }
+    
+
 }
 
 class Display {
@@ -79,19 +82,22 @@ class Display {
     }
 
     operation(){
-        var calcu;
-        const value1 = parseFloat(this.value1);
-        const value2 = parseFloat(this.value2);
-
         
-
-        if( isNaN(value1) ||isNaN(value2)) return
-        this.value1 = this.calculator[this.operator](value2, value1);
-        this.operator = undefined;
-        this.value2 = '';
-        this.printValue();
-        console.log(this.value1);
-        console.log(this.value2);
+            const value1 = parseFloat(this.value1);
+            const value2 = parseFloat(this.value2);
+            console.log(this.operator);
+            
+    
+            if( isNaN(value1) ||isNaN(value2)) return
+            this.value1 = this.calculator[this.operator](value2, value1);
+            console.log(this.value1);
+            console.log(this.value2);
+            this.operator = undefined;
+            this.value2 = '';
+            this.printValue();
+        
+       
+        
     }
 
 
@@ -111,4 +117,7 @@ buttonOperators.forEach(button =>{
     button.addEventListener('click', ()=>{
         display.conca(button.value);
     });
+});
+equal.addEventListener('click', ()=>{
+    display.operation();
 });
