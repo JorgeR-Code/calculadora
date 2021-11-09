@@ -59,13 +59,7 @@ class Display {
             this.value2 = this.value1;
             this.value1 = '';
         }
-     
-        
-        
 
-        // this.operator !== 'equal' && this.operation();
-        // this.operator = typeOperation;
-        // this.printValue();
     }
 
 
@@ -79,7 +73,7 @@ class Display {
 
     printValue(){
         this.displayValue.textContent = this.value1;
-        // this.displayValue.textContent = `${this.value1} ${this.simbols[this.operator] || ''} `;
+        
         
     }
 
@@ -87,22 +81,14 @@ class Display {
         
             const value1 = parseFloat(this.value1);
             const value2 = parseFloat(this.value2);
-            console.log(this.operator);
-            
-    
+
             if( isNaN(value1) ||isNaN(value2)) return
             this.value1 = this.calculator[this.operator](value2, value1);
-            console.log(this.value1);
-            console.log(this.value2);
             this.operator = undefined;
             this.value2 = '';
             this.printValue();
-        
-       
-        
+
     }
-
-
 
 }
 
@@ -185,9 +171,7 @@ $(document).ready(function() {
             case "3":
                 removeAdd ("2","3")
                 state = "3";
-                
-        
-        
+
             break;
         }
     
