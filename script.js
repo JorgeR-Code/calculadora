@@ -127,54 +127,63 @@ equal.addEventListener('click', ()=>{
 
 // ----------------Theme--------------
 
-function selectTheme(themeValue){
-    console.log(themeValue);
+$(document).ready(function() {
+    
+ 
+    function selectTheme(themeValue){
 
-switch (themeValue){
-    case 1:
-    break;
-    case 2:
-        removeAdd (3, 2)
-
-    break;
-    case 3:
-
-    break;
-}
-
-
-function removeAdd (remove, add){
-    document.getElementsByClassName('body').classList.remove(`bodyTheme${{remove}}`)
-    document.getElementsByClassName('option').classList.remove(`optionTheme${{add}}`)
-    document.getElementsByClassName('display').classList.remove(`displayTheme${{add}}`)
-    document.getElementsByClassName('keyboard').classList.remove(`keyboardTheme${{add}}`)
-    document.getElementsByClassName('number').classList.remove(`numberTheme${{add}}`)
-    document.getElementsByClassName('operator').classList.remove(`operatorTheme${{add}}`)
-    document.getElementsByClassName('blue').classList.remove(`blueTheme${{add}}`)
-    document.getElementsByClassName('red').classList.remove(`redTheme${{add}}`)
-
-    document.getElementsByClassName('body').classList.add(`bodyTheme${{add}}`)
-    document.getElementsByClassName('option').classList.add(`optionTheme${{add}}`)
-    document.getElementsByClassName('display').classList.add(`displayTheme${{add}}`)
-    document.getElementsByClassName('keyboard').classList.add(`keyboardTheme${{add}}`)
-    document.getElementsByClassName('number').classList.add(`numberTheme${{add}}`)
-    document.getElementsByClassName('operator').classList.add(`operatorTheme${{add}}`)
-    document.getElementsByClassName('blue').classList.add(`blueTheme${{add}}`)
-    document.getElementsByClassName('red').classList.add(`redTheme${{add}}`)
-
-
-
-
-}
-
-
-}
-
-
-selector.forEach(input =>{
-    input.addEventListener('click', ()=>{
-        selectTheme(input.value);
+        switch (themeValue){
+            case "1":
+                console.log("asdhasdfewfksdcdsj")
+        
+            break;
+            case "2":
+                removeAdd ("3","2")
+        
+            break;
+            case "3":
+                console.log("sdf")
+        
+        
+            break;
+        }
+    
+        function removeAdd (remove, add){
+            document.querySelector('.body').classList.remove(`bodyTheme${remove}`)
+            document.querySelector('.option').classList.remove(`optionTheme${remove}`)
+            document.querySelector('.display').classList.remove(`displayTheme${remove}`)
+            document.querySelector('.keyboard').classList.remove(`keyboardTheme${remove}`)
+            document.querySelector('.number').classList.remove(`numberTheme${remove}`)
+            document.querySelector('.operator').classList.remove(`operatorTheme${remove}`)
+            document.querySelector('.blue').classList.remove(`blueTheme${remove}`)
+            document.querySelector('.red').classList.remove(`redTheme${remove}`)
+                
+        
+            document.querySelector('.body').classList.add(`bodyTheme${add}`)
+            document.querySelector('.option').classList.add(`optionTheme${add}`)
+            document.querySelector('.display').classList.add(`displayTheme${add}`)
+            document.querySelector('.keyboard').classList.add(`keyboardTheme${add}`)
+            document.querySelector('.number').classList.add(`numberTheme${add}`)
+            document.querySelector('.operator').classList.add(`operatorTheme${add}`)
+            document.querySelector('.blue').classList.add(`blueTheme${add}`)
+            document.querySelector('.red').classList.add(`redTheme${add}`)
+        
+        
+        
+        
+        }
+        
+        
+        }
+  
+      selector.forEach(input =>{
+        input.addEventListener('click', ()=>{
+            selectTheme(input.value);
+        });
     });
-});
+    
 
 
+  });
+
+   

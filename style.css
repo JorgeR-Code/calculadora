@@ -381,3 +381,96 @@
     box-shadow: 0 2px hsl(28, 16%, 65%);
     transform: translateY(2px);
   }
+/* Theme 3*/
+.bodyTheme2{
+    background-color: hsl(0, 0%, 90%);
+    color: hsl(60, 10%, 19%);
+ }
+
+ .optionTheme2{
+    background: hsl(0, 5%, 81%);
+
+ }
+   
+.optionTheme2 i{
+    color: hsl(0, 5%, 81%);
+    background: hsl(0, 5%, 81%);
+   
+}
+.optionTheme2 label {
+  background: hsl(0, 5%, 81%);
+   color: hsl(0, 5%, 81%);
+
+}
+
+
+.optionTheme2 span {
+
+  background:hsl(0, 5%, 81%);
+
+}
+
+.displayTheme2{
+
+    background-color: hsl(0, 0%, 93%);
+
+}
+
+.keyboardTheme2{
+    
+    background-color: hsl(0, 5%, 81%);
+
+
+}
+
+.numberTheme2{
+
+    background-color: hsl(45, 7%, 89%);
+    color: hsl(60, 10%, 19%);
+    box-shadow: 0px 3px hsl(35, 11%, 61%);
+
+}
+
+.operatorTheme2{
+
+    background-color: hsl(45, 7%, 89%);
+    color: hsl(60, 10%, 19%);
+    box-shadow: 0px 3px hsl(35, 11%, 61%);
+
+}
+
+
+.blueTheme2{
+    
+    background-color: hsl(185, 42%, 37%);
+    box-shadow: 0px 3px hsl(185, 58%, 25%);
+    color: hsl(0, 0, 100%);
+}
+
+.redTheme2{
+
+    background-color: hsl(25, 98%, 40%);
+    box-shadow: 0px 3px hsl(25, 99%, 27%);
+    color: hsl(0, 0, 100%);
+}
+
+.numberTheme2:hover {
+    background-color: hsl(0, 0%, 72%);
+  }
+.operatortheme2:hover {
+    background-color: hsl(0, 0%, 72%);
+  }
+
+
+.blueTheme2:hover {
+    background-color: hsl(185, 28%, 47%);
+
+}
+.redTheme2:hover {
+    background-color: hsl(25, 100%, 45%);
+
+}
+.numberTheme2:active , .redTheme2:active,.operatortheme2:active {
+    box-shadow: 0 2px hsl(28, 16%, 65%);
+    transform: translateY(2px);
+  }
